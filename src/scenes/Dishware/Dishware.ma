@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Dishware.ma
-//Last modified: Tue, Oct 20, 2026 01:42:18 PM
+//Last modified: Wed, Oct 21, 2026 03:45:42 PM
 //Codeset: UTF-8
 requires maya "2026";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -12,12 +12,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202607282326-107b4e8809";
 fileInfo "osv" "Mac OS X 20.5.1";
-fileInfo "UUID" "FBCBB4E4-C345-6DFC-E0C1-298F7F251384";
+fileInfo "UUID" "0EAD3EC8-9F4C-4F99-6FE3-76A8D2C21A00";
 createNode transform -s -n "persp";
 	rename -uid "9A338E43-0948-2EA3-5254-AA8F2D393829";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -14.402358974613954 8.3254363783295986 7.6299072331877378 ;
-	setAttr ".r" -type "double3" -13.199999999249384 -786.7999999999505 2.0184160430909961e-15 ;
+	setAttr ".t" -type "double3" -9.3000311033950549 7.9555439091349553 14.484666841308719 ;
+	setAttr ".r" -type "double3" -11.999999999249169 -758.79999999994288 1.0202745229217164e-15 ;
 	setAttr ".rpt" -type "double3" -2.3603651389247496e-16 3.0440769401005606e-17 -1.1287293414300524e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2A7701F9-C149-178D-4DCB-C08A92662332";
