@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Dishware.ma
-//Last modified: Thu, Oct 22, 2026 09:06:37 AM
+//Last modified: Thu, Oct 22, 2026 09:08:12 AM
 //Codeset: UTF-8
 requires maya "2027";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -12,18 +12,18 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202606171832-bee0ff2c7e";
 fileInfo "osv" "Mac OS X 20.5.1";
-fileInfo "UUID" "31C9463B-3141-5333-8236-769D3B96D666";
+fileInfo "UUID" "13941B01-1A45-00B3-CCA1-A9AACBBC7FC3";
 createNode transform -s -n "persp";
 	rename -uid "9A338E43-0948-2EA3-5254-AA8F2D393829";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 19.424318234060202 3.4953815868552338 3.139348867215416 ;
-	setAttr ".r" -type "double3" 4.8000000000061043 -283.60000000003021 1.6907619393920205e-15 ;
+	setAttr ".t" -type "double3" 20.775443692455969 6.5730777480889877 10.029101472363973 ;
+	setAttr ".r" -type "double3" -3.5999999999997079 -299.60000000002833 4.0244547190534288e-16 ;
 	setAttr ".rpt" -type "double3" -2.3603651389247496e-16 3.0440769401005606e-17 -1.1287293414300524e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2A7701F9-C149-178D-4DCB-C08A92662332";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 19.380401192307367;
+	setAttr ".coi" 23.187990758139527;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -43229,15 +43229,15 @@ createNode mesh -n "fork_geoShape" -p "fork_geo";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".dr" 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "27871572-8D4F-247D-D3D3-B6B87B792343";
+	rename -uid "DF0A949F-0143-1DAC-1BC3-7A81520995FE";
 	setAttr -s 8 ".lnk";
 	setAttr -s 8 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "748B4153-A648-8F99-4AC0-ACA629CC2357";
+	rename -uid "2B62A335-6143-10C7-5D42-ED9E81CC724F";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "9BC60182-5140-CAF2-EE9B-1EA0BE96A41B";
+	rename -uid "9D13F8F2-9B46-3C57-8BA3-98B5CFEF570E";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "5BEB894E-B84D-FEA9-05AD-0FAA4BA80C91";
+	rename -uid "199AADD4-9C4F-13C6-7129-D390E0563D15";
 	setAttr ".cdl" 10;
 	setAttr -s 11 ".dli[1:10]"  1 2 14 11 4 12 5 13 
 		9 10;
@@ -43246,7 +43246,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "5D561537-3646-7A2A-0DBF-0E98173D3DC7";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "E95AB46B-4D4F-FCBB-B399-7EB2DA31FE0B";
+	rename -uid "51428F0B-FC4A-1B89-80AD-D3A7C23BF740";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "780F3303-C740-9564-060E-36A115989CBD";
 	setAttr ".g" yes;
@@ -43520,8 +43520,8 @@ createNode groupId -n "fork:groupId8";
 	rename -uid "FAAFC13C-B340-8DCC-AD4C-9887ECAB21D1";
 	setAttr ".ihi" 0;
 select -ne :time1;
-	setAttr ".o" 0.02;
-	setAttr ".unw" 0.02;
+	setAttr ".o" 0.03;
+	setAttr ".unw" 0.03;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
